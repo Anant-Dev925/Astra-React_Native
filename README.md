@@ -1,50 +1,147 @@
-# Welcome to your Expo app 👋
+<h1>🚀 Astra</h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p>
+  <strong>Astra</strong> is a modern <strong>video streaming application</strong> built with React Native,
+  where users can <strong>upload, share, and stream AI-generated videos</strong>.
+  It delivers a <strong>YouTube-like experience</strong> with multi-user support,
+  global authentication, saved videos, and a clean, stylish UI ✨
+</p>
 
-## Get started
+<hr />
 
-1. Install dependencies
+<h2>🌌 What is Astra?</h2>
+<p>
+  Astra is a mobile platform dedicated to <strong>AI-generated video content</strong>.
+  Users can upload videos created using AI tools, explore content from other creators,
+  save videos for later, and enjoy a smooth and intuitive streaming experience.
+</p>
+<p>
+  ⚠️ Astra does <strong>not generate AI internally</strong> — it acts as a platform
+  for hosting and consuming AI-created videos.
+</p>
 
-   ```bash
-   npm install
-   ```
+<hr />
 
-2. Start the app
+<h2>✨ Features</h2>
+<ul>
+  <li>🎥 Smooth video streaming</li>
+  <li>🤖 Platform focused on AI-generated videos</li>
+  <li>👥 Multi-user support with individual profiles</li>
+  <li>🔐 Global authentication with persistent sessions</li>
+  <li>💾 Save videos to watch later</li>
+  <li>📤 Upload and manage video content</li>
+  <li>🎨 Modern, clean, and stylish UI</li>
+  <li>📱 Mobile-first experience</li>
+</ul>
 
-   ```bash
-    npx expo start
-   ```
+<hr />
 
-In the output, you'll find options to open the app in a
+<h2>🛠️ Tech Stack</h2>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<h3>📱 Frontend</h3>
+<ul>
+  <li>⚛️ React Native</li>
+  <li>🚀 Expo</li>
+  <li>🎨 NativeWind (utility-first styling)</li>
+</ul>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<h3>🧩 Backend</h3>
+<ul>
+  <li>🛠️ Appwrite</li>
+  <li>🔐 Authentication</li>
+  <li>🗄️ Database</li>
+  <li>📦 Storage (video uploads)</li>
+</ul>
 
-## Get a fresh project
+<hr />
 
-When you're ready, run:
+<h2>🧑‍💻 Project Structure</h2>
+<pre>
+Astra/
+├── app/              📄 Screens and routes
+├── components/       🧱 Reusable UI components
+├── constants/        ⚙️ App constants and configs
+├── hooks/            🪝 Custom React hooks
+├── context/          🌍 Global state and auth context
+├── lib/              🔌 Appwrite & helper utilities
+├── assets/           🖼️ Images, icons, fonts
+└── app.json
+</pre>
 
-```bash
-npm run reset-project
-```
+<hr />
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+<h2>🔐 Authentication Flow</h2>
+<ul>
+  <li>👤 Users sign up or log in using Appwrite Auth</li>
+  <li>🌍 Auth state is managed globally using context</li>
+  <li>🔁 Sessions persist across app reloads</li>
+  <li>🚫 Protected routes require authentication</li>
+</ul>
 
-## Learn more
+<hr />
 
-To learn more about developing your project with Expo, look at the following resources:
+<h2>🎥 Video Handling</h2>
+<ul>
+  <li>📤 Videos are uploaded to Appwrite Storage</li>
+  <li>🗄️ Metadata is stored in Appwrite Database</li>
+  <li>📡 Video feeds are fetched dynamically</li>
+  <li>💾 Users can save videos for later viewing</li>
+</ul>
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+<hr />
 
-## Join the community
+<h2>🚀 Getting Started (Development)</h2>
 
-Join our community of developers creating universal apps.
+<h3>✅ Prerequisites</h3>
+<ul>
+  <li>🟢 Node.js (v16 or higher)</li>
+  <li>📦 Expo CLI</li>
+  <li>🛠️ Appwrite backend (local or cloud)</li>
+</ul>
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<h3>📥 Installation</h3>
+<pre>
+git clone https://github.com/Anant-Dev925/Astra-React_Native.git
+cd Astra-React_Native
+npm install
+</pre>
+
+<h3>▶️ Run the App</h3>
+<pre>
+npx expo start
+</pre>
+
+<hr />
+
+<h2>⚙️ Environment Configuration</h2>
+<p>Create a <code>.env</code> file and add your Appwrite credentials:</p>
+<pre>
+APPWRITE_ENDPOINT=your_appwrite_endpoint
+APPWRITE_PROJECT_ID=your_project_id
+APPWRITE_DATABASE_ID=your_database_id
+APPWRITE_STORAGE_ID=your_storage_id
+</pre>
+
+<hr />
+
+<h2>🚧 Current Status</h2>
+<p>
+  Astra is under <strong>active development</strong>.
+  New features, UI refinements, and performance improvements
+  are being added continuously.
+</p>
+
+<hr />
+
+<h2>🌠 Vision</h2>
+<p>
+  Astra aims to become a <strong>dedicated hub for AI-generated video content</strong>,
+  offering creators and viewers a reliable, elegant, and enjoyable streaming platform.
+</p>
+
+<hr />
+
+<h2>📄 License</h2>
+<p>
+  License information will be added in the future.
+</p>
